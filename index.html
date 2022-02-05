@@ -6,16 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css"/>
     <script src="index.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" ></script>
     <title>APOD NASA</title>
 </head>
 <body>
-    <main> 
+    
         
+        <center>
         <form action="javascript:pesquisar()">
         <h1>ASTRONOMY PICTURE OF THE DAY</h1>
         <p><h2>Each day a different image or photograph of our fascinating universe is featured, along with a brief explanation written by a professional astronomer.</h2></p>
        
         <br/>
+        
         <p>Select the date</p>
         <p><input id="date" type="date" name="data" min="1995-07-16" max="2022-01-29" value="2022-01-29" ></p> 
         <button id="submit" onclick="pesquisar()">Search</button>
@@ -24,16 +27,11 @@
         <h1 id="title"></h1>
         <p id="explanation"></p>
         <p id="copyright"></p>
-        </form>
-
-        </div>
+        <p> &copy Todos os direitos reservados. Kelly Ruivo - resilia T13 </p>
+      </form>
+      </center>
+    </div>
         
-        
-      </main>
-
-      <script src="https://code.jquery.com/jquery-3.6.0.js" ></script>
     </body>
-    <footer>
-        <h3> &copy Todos os direitos reservados. Kelly Ruivo - resilia T13 </h3>
-    </footer>
+    
   </html>
